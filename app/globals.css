@@ -1,14 +1,20 @@
 @import "tailwindcss";
 
 :root {
-
+  --background: #277861;
+  --background2: #EBB599;
+  --foreground: #171717;
 }
 
 @theme inline {
- 
+  --color-back: var(--background);
+  --color-back2: var(--background2);
+  --font-poppins: var(--font-poppins);
 }
 
-
 body {
+}
 
+@utility section-padding {
+  @apply px-15 py-15;
 }
