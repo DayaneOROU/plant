@@ -4,9 +4,9 @@ export default function Footer() {
     <>
       <footer className="bg-back text-gray-50 ">
         <div className="section-padding  ">
-          <div className="grid grid-cols-4 font-medium">
-            <div className="flex flex-col gap-10">
-              <div className="flex items-center ">
+          <div className="grid grid-cols-1 lg:grid-cols-4 font-medium">
+            <div className="flex flex-col items-center gap-10">
+              <div className="flex items-center  ">
                 <h2 className=" font-light text-3xl tracking-wide text-white flex items-center gap-1 select-none">
                   plant
                   <span className="w-10 h-10 bg-[#E07A5F] text-white text-4xl font-medium rounded-full flex items-center justify-center ml-0.5">
@@ -74,7 +74,7 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-            <div className="flex justify-end ">
+            <div className="flex justify-center lg:justify-end m-15 lg:m-0">
               <div className="flex flex-col gap-6">
                 <Title nom="MENU" />
                 <ul className="flex flex-col gap-6">
@@ -85,7 +85,7 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="flex justify-end">
+            <div className="flex justify-center lg:justify-end m-15 lg:m-0">
               <div className="flex flex-col gap-6">
                 <Title nom="FAQ" />
                 <ul className="flex flex-col gap-6">
@@ -96,7 +96,7 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="flex justify-end">
+            <div className="flex justify-center lg:justify-end m-15 lg:m-0">
               <div className="flex flex-col gap-6">
                 <Title nom="SUPPORT" />
                 <ul className="flex flex-col gap-6">

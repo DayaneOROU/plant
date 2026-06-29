@@ -2,18 +2,30 @@
 
 :root {
   --background: #277861;
-  --background2: #EBB599;
+  --background2: #f5ecda;
+  --background3: #EBB599;
+  --btn: #D47156;
   --foreground: #171717;
 }
 
 @theme inline {
   --color-back: var(--background);
   --color-back2: var(--background2);
+  --color-back3: var(--background3);
+  --color-btn: var(--btn);
   --font-poppins: var(--font-poppins);
 }
 
-body {
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }
+
 
 @utility section-padding {
   @apply px-15 py-15;

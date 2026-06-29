@@ -2,7 +2,7 @@ export default function Join() {
   return (
     <>
       <div id="#join"></div>
-      <div className="section-padding bg-back2">
+      <div className="section-padding bg-back3">
         <div className="flex flex-col justify-between items-center gap-10">
           <h3 className="text-back text-3xl font-semibold text-center">
             Join The Plant Family For Order <br />
@@ -18,7 +18,7 @@ export default function Join() {
             />
             <button
               type="submit"
-              className="bg-[#D47156] h-full w-35 rounded-lg font-semibold border border-solid  border-black"
+              className="bg-btn h-full w-35 rounded-lg font-semibold border border-solid  border-black"
             >
               SUBSCRIBE
             </button>
