@@ -8,7 +8,7 @@ export default function Avis() {
         {avis.map((avis) => (
           <div
             key={avis.id}
-            className="grid grid-cols-2 text-back w-full min-w-full shrink snap-start  mr-15"
+            className="grid grid-cols-2 text-back w-full min-w-full shrink md:shrink snap-start  mr-15"
           >
             <div className="flex justify-center items-center ">
               <div>
