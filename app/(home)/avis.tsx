@@ -4,16 +4,11 @@ import { Quote } from "lucide-react";
 export default function Avis() {
   return (
     <>
-      <div className="relative section-padding pb-15 bg-back2 flex overflow-x-auto snap-x snap-mandatory scrollbar-hide no-scrollbar">
-        <img
-          src="p3.png"
-          alt="join"
-          className="absolute w-35 h-35 bottom-0 right-0"
-        />
+      <div className=" section-padding pb-15 bg-back2 flex overflow-x-auto snap-x snap-mandatory scrollbar-hide no-scrollbar">
         {avis.map((avis) => (
           <div
             key={avis.id}
-            className="grid grid-cols-2 text-back w-full min-w-full shrink md:shrink snap-start  mr-15 relative z-30"
+            className="relative grid grid-cols-2 text-back w-full min-w-full shrink md:shrink snap-start  mr-15 relative z-30"
           >
             <div className="relative flex justify-center items-center ">
               <div className="">
@@ -44,6 +39,11 @@ export default function Avis() {
                 <div className="w-3 h-3 bg-[#dcc7a2]"></div>
               </div>
             </div>
+            <img
+              src="p3.png"
+              alt="join"
+              className="absolute w-35 h-35 bottom-0 right-0"
+            />
           </div>
         ))}
       </div>
