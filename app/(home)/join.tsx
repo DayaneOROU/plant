@@ -2,8 +2,18 @@ export default function Join() {
   return (
     <>
       <div id="#join"></div>
-      <div className="section-padding bg-back3">
-        <div className="flex flex-col justify-between items-center gap-10">
+      <div className="relative section-padding bg-back3">
+        <img
+          src="p1.png"
+          alt="join"
+          className="absolute w-50 h-50 bottom-0 left-20"
+        />
+        <img
+          src="p2.png"
+          alt="join"
+          className="absolute w-35 h-35 top-0 right-0"
+        />
+        <div className="flex flex-col justify-between items-center gap-10 relative z-30">
           <h3 className="text-back text-3xl font-semibold text-center">
             Join The Plant Family For Order <br />
             Care Tips, And More

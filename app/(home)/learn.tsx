@@ -3,30 +3,36 @@ import React from "react";
 export default function Learn() {
   return (
     <>
-      <div className="section-padding flex justify-center items-center bg-back2 text-back text-3xl/15 text-center font-semibold">
-        <div>
+      <div className="relative section-padding flex justify-center items-center bg-back2 text-back text-3xl/15 text-center font-semibold">
+        <Arrows1 className="absolute top-8 left-1/20 text-btn" />
+        <img
+          src="p2.png"
+          alt="join"
+          className="absolute w-35 h-35 bottom-0 right-0 rotate-90"
+        />
+        <div className="relative z-30">
           Learn how we take care
           <span>
-            <PlantIcon />
+            <Stickers img="/stickers/st1.png" />
           </span>
           of your plant <br />
           at every stage
           <span>
-            <LeafIcon />
+            <Stickers img="/stickers/st2.png" />
           </span>
           of its journey
           <span>
-            <PlantIcon />
+            <Stickers img="/stickers/st3.png" />
           </span>
           from our
           <br />
           greenhouse
           <span>
-            <SpiralIcon />
+            <Stickers img="/stickers/st4.png" />
           </span>
           to your home
           <span>
-            <LeafIcon />
+            <Stickers img="/stickers/st5.png" />
           </span>
         </div>
       </div>
@@ -34,38 +40,34 @@ export default function Learn() {
   );
 }
 
-const SpiralIcon = () => (
-  <svg
-    className="inline-block w-6 h-6 mx-1 align-middle text-[#706261]"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2.5"
-    strokeLinecap="round"
-  >
-    <path d="M12 12c.5-1 1.5-1 2 0s0 2.5-1.5 3-3-1-3-3 1.5-4.5 4-4.5 5.5 2.5 5.5 6-3 7-7 7-8-4-8-8.5" />
-  </svg>
-);
+function Stickers(props: { img: string }) {
+  return (
+    <img
+      src={props.img}
+      alt="stickers"
+      className={
+        "inline-block w-17 h-17  align-middle -translate-y-2 transform hover:rotate-400 ease-in-out duration-2000"
+      }
+    />
+  );
+}
 
-const PlantIcon = () => (
-  <svg
-    className="inline-block w-7 h-5 mx-1 align-middle text-[#5F6F52]"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-  >
-    <path d="M12 22V10M12 10C12 10 7 7 4 12M12 10C12 10 17 7 20 12M12 14C12 14 8 12 5 17M12 14C12 14 16 12 19 17" />
-  </svg>
-);
-
-const LeafIcon = () => (
-  <svg
-    className="inline-block w-6 h-6 mx-1 align-middle text-[#C97A53]"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-  >
-    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.66 0 3 1.34 3 3v1.78c.89.4 1.5 1.29 1.5 2.32 0 .54-.17 1.04-.46 1.46z" />
-  </svg>
-);
+const Arrows1 = (props: { className?: string }) => {
+  return (
+    <svg
+      width="153"
+      height="43"
+      viewBox="0 0 153 43"
+      fill="#D47156"
+      stroke="#D47156"
+      xmlns="http://www.w3.org/2000/svg"
+      className={props.className}
+    >
+      <path
+        d="M35.6971 17.6448C30.6412 22.3035 25.7286 26.7285 20.9448 31.2995C17.6363 34.4686 14.5856 37.9151 11.2771 41.0842C8.05453 44.1656 1.86719 43.4792 0.27738 39.3901C-0.467394 37.4624 0.363294 33.68 1.86716 32.278C6.55065 27.8968 11.9789 24.348 16.9489 20.2589C21.1597 16.7832 25.0124 12.8547 29.2376 9.40817C34.7231 4.93935 42.4716 6.42896 46.3387 12.4458C47.771 14.6802 49.3035 16.8416 50.6642 19.1052C53.7865 24.3042 56.207 25.3119 61.6926 22.727C67.5648 19.9668 73.2509 16.7978 79.0085 13.804C87.3729 9.45198 95.5225 8.56114 103.715 14.5342C109.716 18.9154 115.674 15.498 121.103 13.0592C127.132 10.3428 132.733 6.575 138.419 3.09925C141.942 0.937861 145.365 -1.13591 149.662 0.7188C153.257 2.26682 154.259 5.91782 151.123 8.12302C139.736 16.126 127.977 23.6032 114.314 26.9037C108.341 28.3495 102.412 27.1812 97.1839 23.6909C93.1019 20.9745 89.1919 20.9599 84.9811 23.355C79.9396 26.232 74.7977 28.9483 69.6129 31.5478C59.2147 36.776 49.547 36.0458 43.0732 29.0505C40.2803 26.0275 38.49 22.0552 35.6827 17.6448H35.6971Z"
+        fill="#D47156"
+        stroke="#D47156"
+      />
+    </svg>
+  );
+};
