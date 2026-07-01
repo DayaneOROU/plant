@@ -40,7 +40,7 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="flex  lg:justify-end m-15 lg:m-0">
+            <div className="flex  lg:justify-end my-15 lg:m-0">
               <div className="flex flex-col gap-6">
                 <Title nom="FAQ" />
                 <ul className="flex flex-col gap-6">

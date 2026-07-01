@@ -5,7 +5,7 @@ import { CirclePlay, LeafIcon } from "lucide-react";
 
 export default function Hero() {
   return (
-    <div className="section-padding bg-back text-back2">
+    <div className="section-padding mt-20 bg-back text-back2">
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-4">
         <div className="lg:col-span-3">
           <div className="flex flex-col gap-10">
@@ -25,33 +25,37 @@ export default function Hero() {
                 <p className="text-sm md:text-base">WATCH VIDEO</p>
               </div>
             </div>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
               <AvatarStack />
-              <Arrow8 className="size-20 mx-8 rotate-45" />
-              <div className="flex flex-col justify-center gap-1 text-xs">
-                <p>Join our user club right now</p>
-                <p className="font-medium">We're waiting for you!</p>
+              <div className="flex gap-4">
+                <Arrow8 className="size-20 mx-8 rotate-45" />
+                <div className="flex flex-col justify-center gap-1 text-xs">
+                  <p>Join our user club right now</p>
+                  <p className="font-medium">We're waiting for you!</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="lg:col-span-2 hidden lg:block">
-          <div className="relative w-full h-full min-h-87.5">
-            <div className="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-back2"></div>
+        <div className="lg:col-span-2 w-full flex justify-center items-center px-4 mt-15 lg:px-0">
+          <div className="relative w-full mb-15 max-w-xs sm:max-w-sm lg:max-w-none h-72 sm:h-96 lg:h-full lg:min-h-87.5 mx-auto">
+            <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2  w-64 h-64 lg:w-80 lg:h-80 rounded-full bg-back2"></div>
+
             <img
               src="heroplant.png"
               alt="picture"
-              className="absolute -top-1/10 left-1/4 -translate-x-1/2 h-[500px]"
+              className="absolute -top-1/10 left-1/2 -translate-x-1/2  h-[360px] lg:h-[500px]"
             />
+
             <Leaf
               title="Watering"
               subtitle="1 in 7 days"
-              className="bottom-1/4 -left-30 flex items-start gap-2 text-xl"
+              className="bottom-1/4 left-0 sm:-left-6 lg:-left-5 flex items-start gap-2 text-sm sm:text-base lg:text-xl"
             />
             <Leaf
               title="Sunlight"
               subtitle="4 to 5 hours"
-              className="bottom-1/10 right-30 flex items-end gap-2 text-xl"
+              className="bottom-1/10 right-0 sm:right-6 lg:right-5 flex items-end gap-2 text-sm sm:text-base lg:text-xl"
             />
           </div>
         </div>

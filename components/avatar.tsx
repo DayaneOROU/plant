@@ -11,7 +11,7 @@ export default function AvatarStack() {
       {avatars.map((avatar, i) => (
         <div
           key={i}
-          className="w-7 h-7 rounded-full border-2 border-white overflow-hidden -mr-2.5 transition transform hover:scale-150"
+          className="w-15 h-15 rounded-full border-2 border-white overflow-hidden -mr-2.5 transition transform hover:scale-150"
           style={{ zIndex: avatars.length - i }}
         >
           <img src={avatar.src} alt={avatar.alt} className="w-full h-full object-cover " />

@@ -3,7 +3,7 @@ import { MoveRightIcon } from "lucide-react";
 
 export default function Bestseller() {
   return (
-    <>
+    <> <div id="#shop"></div>
       <div className="section-padding bg-back text-gray-50">
         <div>
           <div className="flex justify-between mb-15 ">
