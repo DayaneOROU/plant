@@ -56,6 +56,8 @@ export default function Question() {
   }
 
   return (
+    <>
+    <div id="about"></div>
     <div className="section-padding bg-back2">
       <div className="grid lg:grid-cols-2 items-start">
         <div >
@@ -86,6 +88,7 @@ export default function Question() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
