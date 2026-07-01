@@ -13,26 +13,26 @@ export default function Learn() {
         <div className="relative z-30">
           Learn how we take care
           <span>
-            <Stickers img="/stickers/st1.png" />
+            <Stickers img="/Stickers/st1.png" />
           </span>
           of your plant <br />
           at every stage
           <span>
-            <Stickers img="/stickers/st2.png" />
+            <Stickers img="/Stickers/st2.png" />
           </span>
           of its journey
           <span>
-            <Stickers img="/stickers/st3.png" />
+            <Stickers img="/Stickers/st3.png" />
           </span>
           from our
           <br />
           greenhouse
           <span>
-            <Stickers img="/stickers/st4.png" />
+            <Stickers img="/Stickers/st4.png" />
           </span>
           to your home
           <span>
-            <Stickers img="/stickers/st5.png" />
+            <Stickers img="/Stickers/st5.png" />
           </span>
         </div>
       </div>
