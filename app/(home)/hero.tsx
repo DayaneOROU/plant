@@ -5,7 +5,7 @@ import { CirclePlay, LeafIcon } from "lucide-react";
 
 export default function Hero() {
   return (
-    <div className="section-padding mt-20 bg-back text-back2">
+    <div className="section-padding mt-10 bg-back text-back2">
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-4">
         <div className="lg:col-span-3">
           <div className="flex flex-col gap-10">

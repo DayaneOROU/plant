@@ -5,7 +5,7 @@ import { LeafIcon } from "lucide-react";
 export default function Assemble() {
   return (
     <div className="section-padding bg-back2 text-back">
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid lg:grid-cols-2 gap-15 lg:gap-4">
         <div className="relative flex flex-col items-center gap-2">
           <img src="plant.png" alt="Assemble" className=" h-85 w-75" />
           <div className="flex flex-col items-center gap-2">
@@ -34,7 +34,9 @@ export default function Assemble() {
               <Li text="Save 15% on your order by subscribing" />
               <Li text="Regular updates on new plants" />
             </div>
-            <Btn text="TELL ME MORE" />
+            <div className="flex justify-center lg:justify-start">
+              <Btn text="TELL ME MORE" />
+            </div>
           </div>
         </div>
       </div>

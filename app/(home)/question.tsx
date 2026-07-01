@@ -57,7 +57,7 @@ export default function Question() {
 
   return (
     <div className="section-padding bg-back2">
-      <div className="grid grid-cols-2 items-start">
+      <div className="grid lg:grid-cols-2 items-start">
         <div >
           <div className="flex gap-4">
             <h4 className="text-3xl font-semibold text-back">
@@ -81,7 +81,7 @@ export default function Question() {
           <img
             src="piecescozy.jpg"
             alt="IMAGE"
-            className="w-80 h-95 rounded-2xl border-4 border-solid border-back3"
+            className="w-100 h-80 lg:w-80 lg:h-95  rounded-2xl border-4 border-solid border-back3"
           />
         </div>
       </div>

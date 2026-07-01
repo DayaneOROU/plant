@@ -4,7 +4,7 @@ export default function Learn() {
   return (
     <>
       <div className="relative section-padding flex justify-center items-center bg-back2 text-back text-3xl/15 text-center font-semibold">
-        <Arrows1 className="absolute top-8 left-1/20 text-btn" />
+        <Arrows1 className="absolute top-15 left-1/20 text-btn" />
         <img
           src="p2.png"
           alt="join"
