@@ -3,7 +3,7 @@ import Link from "./link";
 
 export default function Navbar() {
   return (
-    <header className="px-4 sm:px-10 lg:px-30 py-3 sm:py-5 w-full bg-back text-white">
+    <header className="section-padding w-full bg-back text-white">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <h2 className="font-light text-2xl sm:text-3xl tracking-wide text-white flex items-center gap-1 select-none">

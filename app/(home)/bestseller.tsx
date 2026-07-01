@@ -16,7 +16,7 @@ export default function Bestseller() {
               />
             </div>
           </div>
-          <div className="flex justify-between md:shrink-0zz overflow-x-auto snap-x snap-mandatory scrollbar-hide no-scrollbar">
+          <div className="flex justify-between  overflow-x-auto snap-x snap-mandatory scrollbar-hide no-scrollbar">
             {plant.map((plant) => (
               <div key={plant.id} className="w-75">
                 <div className="w-full snap-start  mr-3 mb-5 space-y-2 inline-block">
