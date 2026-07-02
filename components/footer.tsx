@@ -5,6 +5,7 @@ import { Tiktok, Instagram, Youtube, X, Alink } from "./SocialMedia";
 export default function Footer() {
   return (
     <>
+    <div id="footer"></div>
       <footer className="bg-back text-gray-50 ">
         <div className="section-padding  ">
           <div className="grid grid-cols-2 lg:grid-cols-4 font-medium">

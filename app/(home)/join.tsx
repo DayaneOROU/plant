@@ -1,7 +1,7 @@
 export default function Join() {
   return (
     <>
-      <div id="#join"></div>
+      <div id="join"></div>
       <div className="relative section-padding bg-back3">
         <img
           src="p1.png"

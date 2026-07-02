@@ -32,7 +32,7 @@ export default function Navbar() {
           <ul className="flex items-center gap-3 sm:gap-6 lg:gap-10 text-white/80 font-medium text-xs sm:text-sm lg:text-base">
             <Link name="Plant" lien="#plant" />
             <Link name="About" lien="#about" />
-            <Link name="Pricing" lien="#pricing" />
+            <Link name="Join" lien="#join" />
             <Link name="Shop" lien="#shop" />
           </ul>
         </nav>
@@ -45,7 +45,10 @@ export default function Navbar() {
             Contact us
           </a>
           <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#E07A5F] hover:bg-[#d0694e] cursor-pointer shadow-sm flex items-center justify-center group-hover:scale-105 transition">
+            <a href="#join">
+
             <Mail size={14} className="text-white stroke-[2.5] sm:size-4" />
+            </a>
           </div>
         </div>
       </div>

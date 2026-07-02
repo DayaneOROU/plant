@@ -26,11 +26,11 @@ export default function Bestseller() {
                     className="w-full object-cover aspect-9/11 rounded-2xl bg-white transition transform hover:scale-105 "
                   />
                 </div>
-                <div className="flex flex-col gap-2 justify-center items-center">
-                  <h4 className="font-medium">{plant.plant}</h4>
+                <div className="flex flex-col w-50 h-25 gap-2 justify-center items-center">
+                  <h4 className="font-medium text-center">{plant.plant}</h4>
 
                   <button className="bg-back2 rounded-2xl w-37 py-1  text-back font-medium transition transform hover:scale-105">
-                    BUR NOW {plant.prix}$
+                    BUY NOW {plant.prix}$
                   </button>
                 </div>
               </div>

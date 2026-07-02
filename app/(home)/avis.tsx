@@ -10,9 +10,9 @@ export default function Avis() {
         {avis.map((avis) => (
           <div
             key={avis.id}
-            className="relative grid grid-cols-2 text-back w-full min-w-[1000] snap-start mx-20  z-30"
+            className="relative grid grid-cols-1 lg:grid-cols-2 text-back w-full min-w-full lg:min-w-[1000] snap-start mr-20  z-30"
           >
-            <div className="flex justify-center items-center ">
+            <div className="flex justify-start lg:justify-center  items-center ">
               <div className="">
                 <img
                   src={avis.img}
@@ -43,7 +43,7 @@ export default function Avis() {
          <img
               src="p3.png"
               alt="join"
-              className="absolute w-35 h-35 bottom-0 right-0"
+              className="absolute w-50 h-50 bottom-0 right-0"
             />
       </div>
     </>

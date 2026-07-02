@@ -4,6 +4,8 @@ import { LeafIcon } from "lucide-react";
 
 export default function Assemble() {
   return (
+    <>
+    <div id="plant"></div>
     <div className="section-padding bg-back2 text-back">
       <div className="grid lg:grid-cols-2 gap-15 lg:gap-4">
         <div className="relative flex flex-col items-center gap-2">
@@ -41,6 +43,7 @@ export default function Assemble() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
